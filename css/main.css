@@ -1,0 +1,175 @@
+td, th {
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+
+.profile{
+    width: 100px; 
+    display:block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.text_center{
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.left{
+    width: 30%;
+    height: 400px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    /* float: left; */
+}
+
+.right{
+    width: 70%;
+    height: 400px;
+    background-color: coral;
+    display: inline-block;
+    vertical-align: top;
+    /* float: left; */
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    /* clear: both; */
+}
+
+.main{
+    color: red; 
+    font-weight: 900;
+}
+
+.box{
+    width: 300px;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+    font-size :10px;
+    color: white;
+    box-shadow: 5px 5px gray;
+}
+
+p {
+    text-align: center;
+}
+
+#special {
+    text-shadow: 10px;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    position: relative;
+}
+
+.main-title{
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.main-text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-button{
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 150px;
+
+}
+
+.sub-background{
+    margin: auto;
+    padding: 20px;
+    background-color: #eee;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    box-sizing: border-box;
+}
+
+.input-test{
+    font-size: 20px;
+}
+
+.input-test:focus {
+    border: 2px solid red;
+}
+
+.custom-link{
+    text-decoration: none;
+}
+
+.custom-link:link{
+    color: skyblue;
+}
+.custom-link:visited{
+    color: violet;
+}
+
+.main-btn{
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bg-red{
+    background: red;
+}
+
+.bg-blue{
+    background: blue;
+}
+
+.f-small{
+    font-size: 12px;
+}
+
+.f-mid{
+    font-size: 16px;
+}
+
+.f-lg{
+    font-size: 20px;
+}

@@ -1,0 +1,65 @@
+
+.flex-container{
+    display: flex;
+    background-color: palevioletred;
+    height: 60px;
+    align-items: center;
+    padding: 5px;
+}
+
+.flex-itme{
+    color: white;
+    margin-right: 10px;
+    
+}
+
+.flot-container{
+    background-color: salmon;
+    width: 80%;
+    height: 30%;
+    margin: auto;
+}
+
+.flot-item{
+    float: left;
+    margin: 10px;
+}
+
+.flot-item-right{
+    float: right;
+    margin: 10px;
+}
+
+.test{
+    width: 50vw;
+    height: 100vh;
+    background-color: grey;
+}
+
+.f-lg {
+    font-size: 30px;
+}
+
+.f-mid {
+    font-size: 20px;
+}
+
+.f-sm {
+    font-size: 10px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .f-lg {
+        font-size: 20px;
+    }
+    
+    .f-mid {
+        font-size: 15px;
+    }
+    
+    .f-sm {
+        font-size: 10px;
+    }
+    
+}

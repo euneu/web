@@ -1,0 +1,59 @@
+div, input, textarea{
+    box-sizing: border-box;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.main-background{
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+
+}
+
+.cart-table{
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.cart-table th:nth-child(2){
+    width: 700px;
+}
+
+.cart-table td,.cart-table th{
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+}
+
+.cart-link{
+    margin: 30px;
+
+}
+
+.blue-button{
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+.blue-button:hover{
+    background-color: cadetblue;
+}
+
+.blue-button:focus{
+    background-color:grey;
+}
+
+.blue-button:active{
+    background-color: beige;
+}
+

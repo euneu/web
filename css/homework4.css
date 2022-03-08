@@ -1,0 +1,134 @@
+.div-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.div-product i{
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.div-container div{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.div-product{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.div-product div{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.div-join{
+    width: 80%;
+
+}
+
+.shop-bg{
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.shop-item{
+    width: 33%;
+    padding: 10px;
+}
+
+.shop-item img{
+    width: 100%;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0,cubic-bezier(0.075, 0.82, 0.165, 1));
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay-half{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:100%;
+    background: rgba(0,0,0,0.5);
+    transition: all 1s;
+    
+}
+
+.overlay-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.overlay-wrap:hover .overlay-half{
+    top:50%;
+}
+
+@media screen and (max-width : 1200px) { 
+    .div-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .div-product{
+        max-width: 600px;
+    }
+
+    .div-product div{
+        float: left;
+        width: 50%;
+    }
+    
+  } 
+  
+  @media screen and (max-width : 768px) { 
+    .div-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-product div{
+        float: left;
+        width: 100%;
+    }
+    
+  }
