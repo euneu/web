@@ -1,0 +1,14 @@
+@use 'reset';
+
+
+
+@mixin font($size, $exp) {
+    font-size: $size;
+    #{ $exp }: -1px;
+}
+
+h2{
+    @include font(40px, width);
+    color : reset.$main_color;
+}
+

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: '나눔스퀘어';
+    src: url(../font/NanumSquareB.woff);
+}
+
+body{
+    background-color: #f7f9fc;
+    font-family: '나눔스퀘어';
+    transform: rotate(0.03deg);
+    margin: 0;
+}
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+li:active{
+    color: white;
+    background-color: #6fbaf8;
+}
+
+.alert{
+    padding: 10px;
+    border: none;
+    background-color: aquamarine;
+    color: green;
+    margin: 0;
+}
+
+.alert p {
+    margin: 0;
+}
