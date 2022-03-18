@@ -1,0 +1,32 @@
+@font-face {
+    font-family: '나눔스퀘어';
+    src: url(../font/NanumSquareB.woff);
+}
+body {
+    font-family: '나눔스퀘어';
+    transform: rotate(0.03deg);
+    margin: 0;
+}
+
+.ani-text{
+    text-align: center;
+}
+.ani-text:hover{
+    animation-name: side;
+    animation-duration: 2s;
+}
+
+@keyframes side {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

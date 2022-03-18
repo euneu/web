@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="bridge.mp4" controls></video>
+    <video controls autoplay muted preload="metadata" poster="/img/author.png"> 
+    <!-- muted까지 붙여줘야 자동재생됨(크롬에서) preload 미리 다운 받느냐 안 받느냐 metadata는 메타 데이터만
+    poster는 섬네일 오디오도 똑같음-->
+        <source src="bridge_m.webm" type="video/mp4">
+        <source src="bridge.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="bass.mp3">
+    </audio>
+</body>
+</html>

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "나눔스퀘어";
+  src: url(../font/NanumSquareB.woff);
+}
+body {
+  font-family: "나눔스퀘어";
+  transform: rotate(0.03deg);
+  margin: 0;
+}
+
+
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6fbaf8;
+  color: white;
+  font-size: 15px;
+  display: block;
+  margin: 30px auto;
+}/*# sourceMappingURL=ani.css.map */
+
+.btn:hover{
+  animation-name: btn-ani;
+  animation-duration: 1s;
+}
+
+@keyframes btn-ani{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.ani-x{
+  margin: 100px auto;
+  text-align: center;
+  font-size: 40px;
+}
+.ani-x:hover{
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards
+}
+
+@keyframes turn {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: scale(2) rotate(45deg);
+  }
+}
+
+.nav-bar{
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);;
+}
+.nav-bar:hover{
+  transform: translateX(0px);
+  text-align: center;
+}
+.nav-bar:hover p{
+  animation-name: slide;
+  animation-duration: 1s;
+}
+@keyframes slide{
+  0%{
+    transform: translateX(-300px);
+  }
+  50%{
+    transform: skewX(-45deg) translateX(50px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+
+}
