@@ -1,0 +1,41 @@
+@font-face {
+    font-family: '나눔스퀘어';
+    src: url(../font/NanumSquareB.woff);
+}
+body {
+    font-family: '나눔스퀘어';
+    transform: rotate(0.03deg);
+    margin: 0;
+}
+
+.white-box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 2px 2px 1px  #eee ,-1px -2px 2px 1px  #eee;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: rgba(61, 61, 61, 0.712);
+}
+
+.nav-link{
+    margin-right: 18px;
+    position:relative;
+}
+.badge{
+    position: absolute;
+    top:0;
+    right: 15px;
+}
+
+.card-body{
+    border-left: 3px solid gray;
+    
+}
+.card-body i{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+}
