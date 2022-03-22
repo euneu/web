@@ -15,11 +15,14 @@ body {
     box-shadow: 1px 2px 2px 1px  #eee ,-1px -2px 2px 1px  #eee;
 }
 
+.navbar{
+    box-shadow: 1px 2px 2px 1px  #eee;
+}
+
 .nav-item a{
     text-decoration: none;
     color: rgba(61, 61, 61, 0.712);
 }
-
 .nav-link{
     margin-right: 18px;
     position:relative;
@@ -30,12 +33,43 @@ body {
     right: 15px;
 }
 
-.card-body{
-    border-left: 3px solid gray;
-    
-}
 .card-body i{
     padding-left: 20px;
     padding-top: 20px;
     font-size: 30px;
+}
+
+.side-bar{
+    background-color: rgb(79, 49, 211);
+    color: white;
+    width: 150px;
+    height: 100%;
+    float: left;
+    position: fixed;
+    z-index: 5;
+    list-style: none;
+    transition: all 1s;
+    transform:translateX(-100px);
+}
+.side-bar li{
+    margin: 10px 0px 0px 15px;
+}
+.side-bar span{
+    padding-left: 15px;
+}
+.side-bar:hover{
+    transform: translateX(0px);
+}
+.side-bar i {
+    transform: translateX(100px);
+}
+.side-bar:hover i{
+    transform: translateX(0px);
+}
+
+.content{
+    margin-left: 50px;
+}
+.content-dash-board{
+    margin-left: 20px;
 }

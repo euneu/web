@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 40px;
+  width: -1px;
+  color: brown;
+}/*# sourceMappingURL=test.css.map */

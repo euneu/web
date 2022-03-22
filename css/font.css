@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "나눔스퀘어";
+  src: url(../font/NanumSquareB.woff);
+}
+body {
+  font-family: "나눔스퀘어";
+  transform: rotate(0.03deg);
+  margin: 0;
+}/*# sourceMappingURL=font.css.map */
