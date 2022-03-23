@@ -1,0 +1,12 @@
+.alert{
+    margin: 30px;
+    display: none;
+}
+
+.alert-box{
+    margin: 20px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
