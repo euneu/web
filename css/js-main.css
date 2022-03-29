@@ -2,16 +2,13 @@
     font-family: "나눔스퀘어";
     src: url(../font/NanumSquareB.woff);
   }
-  body {
+body {
     font-family: "나눔스퀘어";
     transform: rotate(0.03deg);
     margin: 0;
-  }
-
-.alert{
-    margin: 30px;
-    display: none;
 }
+
+
 .login-alert{
   margin: 30px;
   display: none;
@@ -55,4 +52,17 @@
 .show-modal{
   visibility: visible;
   opacity: 1;
+}
+
+
+.slide-container{
+  width: 300vw;
+  transition: all 1s;
+}
+.slide-box{
+  width: 100vw;
+  float: left;
+}
+.slide-box img{
+  width: 100%;
 }
