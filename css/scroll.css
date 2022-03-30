@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "나눔스퀘어";
+    src: url(../font/NanumSquareB.woff);
+  }
+body {
+    font-family: "나눔스퀘어";
+}
+
+.navbar {
+  position : fixed;
+  width : 100%;
+  z-index : 5
+}
+.navbar-brand {
+  font-size : 30px;
+  transition : all 1s;
+}
