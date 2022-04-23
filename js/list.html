@@ -3,53 +3,124 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/js-main.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="card-group container">
-        <div class="card">
-          <img src="https://via.placeholder.com/600">
-          <div class="card-body">
-            <h5 class="title">Card title</h5>
-            <p>가격 :40000</p>
-            <button class="btn btn-danger">주문하기</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/600">
-          <div class="card-body">
-            <h5 class="title">Card title</h5>
-            <p>가격 :40000</p>
-            <button class="btn btn-danger">주문하기</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/600">
-          <div class="card-body">
-            <h5 class="title">Card title</h5>
-            <p>가격 :40000</p>
-            <button class="btn btn-danger">주문하기</button>
-          </div>
-        </div>
-      </div>
-      
+    <div class="container">
+      <div class="row"></div>
+    </div>
+    <div class="container">
+      <button class="btn btn-danger" id="more">더보기</button>
+    </div>
+    <div class="container mt-2">
+      <button class="btn btn-danger" id="price">최저가순으로</button>
+      <button class="btn btn-danger" id="name_reverse">상품명 역순으로</button>
+      <button class="btn btn-danger" id="six_down">6만원 이하 상품</button>
+    </div>
+    
+
+
+      <!--<script>
+        $.get('https://codingapple1.github.io/price.json')
+        .done(function(data){
+          console.log(data)
+        })
+        .fail(function(){
+          console.log('실패!')
+        })
+      </script>
+      !-->
       <script>
         var products = [
           { id : 0, price : 70000, title : 'Blossom Dress' },
           { id : 1, price : 50000, title : 'Springfield Shirt' },
           { id : 2, price : 60000, title : 'Black Monastery' }
         ]
-
-        for(let i=0; i<products.length; i++){
-            document.querySelectorAll('.title')[i].innerHTML=products[i].title;
-            document.querySelectorAll('.card-body p')[i].innerHTML= '가격 :' + products[i].price;
+        // array 데이터를  정렬
+        function sort(data){
+          data.sort(function(a,b){
+            return a.price - b.price
+          })
         }
+
+        products.sort(function(a,b){
+          return a.title - b.title
+        })
+        console.log(products)
+
+        
+        //html 추가 함수
+        function html_add(data) {
+          for(let i =0; i<data.length; i++){
+              $('.row').append(`
+                <div class="col-sm-4">
+                  <img src="https://via.placeholder.com/600" class="w-100">
+                  <h5>${data[i].title}</h5>
+                  <p>가격 : ${data[i].price}</p>
+                </div>`)
+          }
+        }
+
+        html_add(products);
+
+        //products 가격 정렬하는 버튼
+        $('#price').on('click',function(){
+          sort(products);
+          $('.row').html('');
+          html_add(products);
+        })
+
+        //다나가순
+        $('#name_reverse').on('click',function(){
+         products.sort(function(a,b){
+           if(a.title < b.title){
+            return 1
+           }
+           else{
+             return -1
+           }
+          })
+          $('.row').html('');
+          html_add(products);
+        })
+
+        //6만원이하상품
+        $('#six_down').on('click',function(){
+          var six_down_pro = products.filter(function(a){
+            return a.price <= 60000
+          })
+          $('.row').html('');
+          html_add(six_down_pro);
+        })
+
+        //더보기 버튼 클릭 횟수
+        var button = 0;
+        $('#more').on('click',function(){
+          if(button == 0){
+            $.get('https://codingapple1.github.io/js/more1.json')
+            .done(function(data){
+              html_add(data)
+            })
+          }
+          else if(button == 1){
+            $.get('https://codingapple1.github.io/js/more2.json')
+            .done(function(data){
+              html_add(data)
+            })
+            $('#more').hide();
+          }
+          button ++;
+        })
+
+       
+
+
+
         //문자 사이에 변수 넣기
         var a ='안녕!'
-        
         console.log(`ㅎㅇ ${a} ㅎㅇ`);
       </script> 
 
