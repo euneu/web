@@ -9,6 +9,17 @@ body {
 }
 
 
+
+.navbar {
+  position : fixed;
+  width : 100%;
+  z-index : 5
+}
+.navbar-brand {
+  font-size : 30px;
+  transition : all 1s;
+}
+
 .login-alert{
   margin: 30px;
   display: none;
@@ -45,6 +56,7 @@ body {
   transition: all 1s;
 }
 .white-bg {
+  margin-top: 100px;
   background: white;
   border-radius: 5px;
   padding: 30px;
@@ -57,7 +69,7 @@ body {
 
 .slide-container{
   width: 300vw;
-  transition: all 1s;
+  /*transition: all 1s;*/
 }
 .slide-box{
   width: 100vw;

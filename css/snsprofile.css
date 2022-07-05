@@ -47,7 +47,7 @@ i{
     border: 1px solid gray;
     border-radius: 50px;
     margin-bottom: 10px;
-    margin-right:2px;s
+    margin-right:2px;
 }
 
 
@@ -59,7 +59,7 @@ i{
     font-size: 100px;
 }
 
-.btn{
+.btn-under{
     font-size:15px;
     border-bottom: 5px solid #6fbaf8;
 }

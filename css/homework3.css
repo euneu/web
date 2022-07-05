@@ -1,5 +1,27 @@
+@font-face {
+    font-family: '나눔스퀘어';
+    src: url(../font/NanumSquareB.woff);
+}
+
 div, input, textarea{
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: '나눔스퀘어';
+    transform: rotate(0.03deg)
+}
+
+div, input, textarea{
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    padding: 20px;
+    font-size: 30px;
+
 }
 
 table{
@@ -9,8 +31,7 @@ table{
 .main-background{
     width: 100%;
     background-color: #c2d3de;
-    padding: 30px;
-
+    padding-bottom: 100px;
 }
 
 .cart-table{
@@ -32,11 +53,12 @@ table{
 
 .cart-link{
     margin: 30px;
-
+    float: left;
 }
 
 .blue-button{
-    background-color: blue;
+    margin: 30px;
+    background-color: rgba(121, 121, 248, 0.781);
     border: none;
     border-radius: 3px;
     padding: 15px;

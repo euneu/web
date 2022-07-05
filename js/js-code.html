@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/js-main.css">
+    <title>Hello, world!</title>
+  </head>
+
+    
+  <body>
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="answer">
+    <button id="send-answer">제출</button>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        
+        var count = 0;
+        $('#send-answer').on('click',function(){
+            count += 1;
+            var answer = $('#answer').val();
+            if (answer == '1335'){
+                alert('정답');
+            }
+            else if(count>=3&&answer!='1335'){
+                alert('3번 끗');
+            }
+
+        })
+
+
+        var age = 20;
+        const home ='서울';
+
+
+        var first = 360;
+        var sum = 0;
+
+        sum = first + first * 2/3 + first *2/3 *2/3;
+
+        console.log(sum);
+
+
+        var num = 60000;
+        var future = 0;
+
+        if(num < 50000 ) {
+            future = num + (num*0.15); //1년치
+            future = future + (future*0.15);
+        }
+        else {
+            future = num + (num*0.2); //1년치
+            future = future + (future*0.2);
+        }
+        console.log(future);
+
+
+        function game(num){
+            if(num%9==0){
+                alert('박수x2');
+            }
+            else if(num%3==0){
+                alert('박수');
+            }
+            else{
+                alert('통과');
+            }
+
+        }
+
+        function exam(num1,num2){
+            if((num1+num2)>=120){
+                if(num1 > 40 && num2  > 40){
+                    alert('합격');
+                }
+                else{
+                    alert('불합격');
+                }
+            }
+            else{
+                alert('불합격');
+            }
+        }
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
